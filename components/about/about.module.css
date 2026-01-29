@@ -1,0 +1,230 @@
+.herosection {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  height: 676px;
+  justify-content: center;
+  align-items: center;
+}
+
+.herosectionWrapper {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 26.25rem;
+
+  & div {
+    width: 31rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & div:first-of-type {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.herosectionTexts {
+  color: #333333;
+
+  & h1 {
+    font-size: 4rem;
+    line-height: 6.30731rem;
+  }
+
+  & span {
+    color: #003399;
+  }
+
+  & p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 2.125rem;
+  }
+}
+
+.valuesSection {
+  display: flex;
+  flex-direction: column;
+  gap: 5.78rem;
+  margin-bottom: 4.06rem;
+  width: 90%;
+}
+
+.coreValues {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+  align-items: center;
+}
+
+.coreValuesHeader {
+  text-transform: uppercase;
+  color: #003399;
+}
+
+.coreValuesCardsContainer {
+  display: flex;
+  gap: 1.56rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.coreValuesCard {
+  display: flex;
+  width: 24.625rem;
+  height: 17.375rem;
+  max-height: 17.5rem;
+  padding: 1rem 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+
+  border-radius: 0.9375rem;
+  border-top: 1px solid #4c88ff;
+  background: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+  & h4 {
+    color: #003399;
+    text-align: center;
+    font-size: 1.06063rem;
+    font-weight: 700;
+    line-height: 1.59094rem;
+    text-transform: uppercase;
+  }
+
+  & h3 {
+    color: #1d1d1d;
+    text-align: center;
+    font-size: 2.12125rem;
+    font-weight: 700;
+    line-height: 3.18188rem;
+  }
+
+  & p {
+    color: #19181b;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    width: 16.125rem;
+  }
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  height: 3rem;
+}
+
+.marqueeInner {
+  animation: marquee 30s linear infinite;
+}
+
+.valueItem {
+  display: inline-flex;
+  align-items: center;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Tab Responsive */
+@media (max-width: 960px) and (min-width: 901px) {
+  .herosectionWrapper {
+    gap: 1rem;
+  }
+
+  .herosectionTexts {
+    & h1 {
+      font-size: 3.3rem;
+      line-height: 5rem;
+    }
+
+    & p {
+      font-size: 1.125rem;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .herosection {
+    margin-bottom: 5.72rem;
+  }
+
+  .herosectionWrapper {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .coreValuesCardsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .coreValuesCard {
+    display: flex;
+    width: 21rem;
+  }
+
+  .coreValuesCard:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 732px) {
+  .coreValuesCard {
+    width: 20rem;
+  }
+}
+@media (max-width: 691px) {
+  .coreValuesCardsContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
+
+  .coreValuesCard {
+    width: 24.625rem;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 400px) {
+  .herosection {
+    align-items: flex-start;
+    padding-top: 3.125rem;
+    margin: 0;
+  }
+
+  .herosectionWrapper div {
+    width: 90%;
+  }
+
+  .herosectionTexts {
+    & h1 {
+      font-size: 2.7rem;
+      line-height: 4rem;
+    }
+
+    & p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .coreValuesCard {
+    width: 21.625rem;
+  }
+}

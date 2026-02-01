@@ -1,0 +1,414 @@
+.herosection {
+  width: 100%;
+  max-width: 1440px;
+  /* max-width: 90%; */
+  display: flex;
+  height: 676px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.herosectionContact {
+  position: absolute;
+  bottom: 2.5rem;
+  right: -2.5rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  width: 10rem;
+  height: 5.625rem;
+  justify-content: flex-start;
+  padding: 0.625rem 1.25rem;
+  border-radius: 6.25rem 0 0 6.25rem;
+
+  & div {
+    border-radius: 43.75rem;
+    border: 0.7px solid #cfcfcf;
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    width: 4.375rem;
+    height: 4.375rem;
+    padding: 0.2625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4375rem;
+    aspect-ratio: 1/1;
+  }
+}
+
+.herosectionWrapper {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 26.25rem;
+
+  & div {
+    width: 31rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & div:first-of-type {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.herosectionTexts {
+  color: #333333;
+
+  & h1 {
+    font-size: 4rem;
+    line-height: 6.30731rem;
+  }
+
+  & span {
+    color: #003399;
+  }
+
+  & p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 2.125rem;
+  }
+}
+
+.valuesSection {
+  display: flex;
+  flex-direction: column;
+  gap: 5.78rem;
+  margin-bottom: 4.06rem;
+  width: 100%;
+  /* max-width: 90%; */
+  max-width: 1440px;
+}
+
+.coreValues {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+  align-items: center;
+}
+
+.coreValuesHeader {
+  text-transform: uppercase;
+  color: #003399;
+}
+
+.coreValuesPetals {
+  position: absolute;
+  top: 2rem;
+  left: -4.6rem;
+  z-index: 10;
+  width: 9.125rem;
+  height: 2.4575rem;
+}
+
+.coreValuesCardsContainer {
+  display: flex;
+  gap: 1.56rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.coreValuesCard {
+  display: flex;
+  width: 24.625rem;
+  height: 17.375rem;
+  max-height: 17.5rem;
+  padding: 1rem 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+
+  border-radius: 0.9375rem;
+  border-top: 1px solid #4c88ff;
+  background: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  transition:
+    transform 450ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 450ms cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  & h4 {
+    color: #003399;
+    text-align: center;
+    font-size: 1.06063rem;
+    font-weight: 700;
+    line-height: 1.59094rem;
+    text-transform: uppercase;
+  }
+
+  & h3 {
+    color: #1d1d1d;
+    text-align: center;
+    font-size: 2.12125rem;
+    font-weight: 700;
+    line-height: 3.18188rem;
+  }
+
+  & p {
+    color: #19181b;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    width: 16.125rem;
+  }
+}
+.coreValuesCardsContainer:has(.coreValuesCard:hover) {
+  gap: 2.5rem;
+}
+
+.coreValuesCard:hover {
+  transform: scale(1.1);
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  height: 3rem;
+}
+
+.marqueeInner {
+  animation: marquee 30s linear infinite;
+}
+
+.valueItem {
+  display: inline-flex;
+  align-items: center;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.teamSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2.75rem;
+  margin-bottom: 4.06rem;
+  width: 90%;
+  /* max-width: 90%; */
+  max-width: 1440px;
+}
+
+.teamSectionHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  & h1 {
+    color: #003399;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.575rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+  }
+
+  & p {
+    color: #333333;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.2rem;
+    text-transform: capitalize;
+  }
+}
+
+.teamContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.19rem;
+  justify-content: space-between;
+}
+
+.memberCard {
+  background-color: burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-width: 18.4375rem;
+  height: 18.4375rem;
+  border-radius: 1.47738rem;
+  padding-left: 1.44rem;
+  padding-right: 1.57rem;
+  padding-bottom: 1.11rem;
+  transition:
+    transform 450ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 450ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.teamContainer:has(.memberCard:hover) {
+  gap: 1.8rem;
+}
+
+.memberCard:hover {
+  transform: scale(1.1);
+}
+
+.memberDetail {
+  display: flex;
+  width: 15.42369rem;
+  padding: 0.9455rem 1.41825rem;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.19175rem;
+
+  border-radius: 2.95475rem;
+  background: rgba(255, 255, 255, 0.84);
+
+  & h3 {
+    color: #333333;
+    font-size: 1.18188rem;
+    font-weight: 600;
+    line-height: 1.41825rem;
+  }
+  & p {
+    color: #606060;
+    font-size: 0.59094rem;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+/* Tab Responsive */
+@media (max-width: 1480px) and (min-width: 1281px) {
+  .coreValuesCardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .coreValuesCard {
+    width: 23rem;
+  }
+
+  .memberCard {
+    min-width: 17rem;
+  }
+}
+@media (max-width: 1280px) {
+  .teamContainer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1041px) and (min-width: 901px) {
+  .memberCard {
+    min-width: 15rem;
+  }
+}
+@media (max-width: 900px) and (min-width: 650px) {
+  .teamContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 960px) and (min-width: 901px) {
+  .herosectionWrapper {
+    gap: 1rem;
+  }
+
+  .herosectionTexts {
+    & h1 {
+      font-size: 3.3rem;
+      line-height: 5rem;
+    }
+
+    & p {
+      font-size: 1.125rem;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .herosection {
+    margin-bottom: 5.72rem;
+  }
+
+  .herosectionWrapper {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .coreValuesCardsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .coreValuesCard {
+    width: 21rem;
+  }
+
+  .coreValuesCard:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 732px) {
+  .coreValuesCard {
+    width: 20rem;
+  }
+}
+@media (max-width: 691px) {
+  .coreValuesCardsContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
+
+  .coreValuesCard {
+    width: 24.625rem;
+  }
+
+  .teamContainer {
+    grid-template-columns: repeat(1, 23rem);
+    justify-content: center;
+  }
+
+  .memberCard {
+    height: 20.4375rem;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 400px) {
+  .herosection {
+    align-items: flex-start;
+    padding-top: 3.125rem;
+    margin: 0;
+  }
+
+  .herosectionWrapper div {
+    width: 90%;
+  }
+
+  .herosectionTexts {
+    & h1 {
+      font-size: 2.7rem;
+      line-height: 4rem;
+    }
+
+    & p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .coreValuesCard {
+    width: 21.625rem;
+  }
+}

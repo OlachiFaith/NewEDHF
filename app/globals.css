@@ -148,6 +148,7 @@
     scroll-behavior: smooth;
   }
   body {
+     overflow-x: hidden;
     @apply bg-background text-foreground; /* Replaced existing background-color and color */
     font-family: var(--font-family);
     line-height: 1.5;

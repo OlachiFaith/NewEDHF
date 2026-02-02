@@ -2,7 +2,7 @@
 
 
 
-import { Facebook, Instagram, Youtube, Mail, Phone, MapPin    } from 'lucide-react';
+import { Facebook, Instagram, Youtube, Mail, Phone, MapPin, MessageSquare     } from 'lucide-react';
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/Footer";
 import "./contactUs.css";
@@ -32,7 +32,7 @@ export default function contact() {
               <div className="innerCircleContainer">
               <div className="greenCircleContainer">
               <div className="greenCircle">
-                <svg className="iconStyle" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="h-10 w-10 text-white" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
                 </svg>
               </div>

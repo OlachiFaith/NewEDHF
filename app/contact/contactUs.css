@@ -26,6 +26,9 @@
     font-weight: bold;
     padding-left: 40px;
 }
+.spin { 
+    color: #1e3a8a;
+}
 .insideFirstContainer2 {
     width: 50%;
     height: 100%;
@@ -42,7 +45,7 @@
     justify-content: center;
 
 }
-roundedFullInnerContainer {
+.roundedFullInnerContainer {
     height: 180px;
     width: 180px;
     display: flex;
@@ -76,22 +79,12 @@ roundedFullInnerContainer {
 .greenCircleContainer{
     height: 100px;
   width: 100px;
+  background-color: #3ab54a;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 9999px;
   border: 1px solid #d1d5db;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
-              0 4px 6px -4px rgba(0, 0, 0, 0.1);
-}
-.green-circle {
-  height: 80px;
-  width: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 9999px;
-  background-color: #22c55e;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
               0 4px 6px -4px rgba(0, 0, 0, 0.1);
 }
@@ -103,7 +96,7 @@ roundedFullInnerContainer {
 .indicatorDot {
   position: absolute;
   left: 48px;
-  top: 40px;
+  top: 33px;
   height: 20px;
   width: 20px;
   border-radius: 9999px;
@@ -142,7 +135,7 @@ roundedFullInnerContainer {
 }
 .floatingPill {
   position: absolute;
-  top: 140px;
+  top: 150px;
   left: 80px;
   display: flex;
   align-items: center;
@@ -374,4 +367,40 @@ roundedFullInnerContainer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 820px){
+    .firstHeader{
+        font-size: 30px;
+    }
+    .firstPara{
+        font-size: 12px;
+    }
+    .secondHeading{
+        font-size: 1rem;
+    }
+    .contentBox{
+        padding-left: 0px;
+    }
+    .inputRow{
+        padding: 0px;
+    }
+    .contentArea{
+        padding-left: 0px;
+    }
+    .contentText{
+        font-weight: 400;
+        font-size: 0.50rem
+    }
+    .inputRow{
+        padding-left: 0;
+    }
+    .floatingPill {
+  position: absolute;
+  top: 150px;
+  left: 60px;
+    }
+    .labelStyle{
+        font-size: 0.6rem;
+    }
 }

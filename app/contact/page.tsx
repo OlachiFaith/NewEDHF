@@ -3,8 +3,6 @@
 
 
 import { Facebook, Instagram, Youtube, Mail, Phone, MapPin, MessageSquare     } from 'lucide-react';
-import Header from "@/components/header/header";
-import Footer from "@/components/footer/Footer";
 import "./contactUs.css";
 
 const TwitterXIcon = ({ className }) => (
@@ -23,25 +21,31 @@ export default function contact() {
       <div className="firstContainer">
         <div className="insideFirstContainer">
           <p className="firstPara">Get in Touch with Us Today </p>
-          <h1 className="firstHeader">Together, <span className="text-blue-900">We Can</span> Change Lives!</h1>
+          <h1 className="firstHeader">Together, <span className="spin">We Can</span> Change Lives!</h1>
         </div>
         <div className="insideFirstContainer2">
+            
           <div className="roundedFullContainer">
-            <div className="roundedFullInnerContainer">
-              <div className="roundedFullInnermostContainer">
-              <div className="innerCircleContainer">
-              <div className="greenCircleContainer">
-              <div className="greenCircle">
-                <svg className="h-10 w-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
-                </svg>
-              </div>
-            </div>
-            </div>
-            
-            </div>
-            
-            </div>
+                <div className="roundedFullInnerContainer">
+                    <div className="roundedFullInnermostContainer">
+                        <div className="innerCircleContainer">
+                            <div className="greenCircleContainer">
+                                <div className="greenCircle">
+                                    <div className='round'>
+                                        <MessageSquare 
+                                        size={48} 
+                                        strokeWidth={1}
+                                        color="white"
+                                        fill='white'
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                
+                </div>
           <div className="indicatorDot">
             <span className="textIcon">📖</span>
           </div>
@@ -64,7 +68,7 @@ export default function contact() {
         <div className="containerSplit">
           <div className="contentBox">
             <p className="headingStyle">Get In Touch</p>
-            <h1 className="secondHeading">You &apos;re Not Alone. We &apos; re Here to Help</h1>
+            <h1 className="secondHeading">You&apos;re Not Alone. We&apos;re Here to Help</h1>
           </div>
           <div className="contentBox2">
             <div className="contentArea">
@@ -136,13 +140,11 @@ export default function contact() {
       </div>
       <div className="mapContainer">
         <div className="insideMapContainer">
-          <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.6013371104773!2d3.3357324000000066!3d6.445203600000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b897dd0e72865%3A0xd070136c92034b3!2s36%20Babatunde%20St%2C%20Apapa%2C%20Lagos%20102103%2C%20Lagos!5e0!3m2!1sen!2sng!4v1769875575463!5m2!1sen!2sng" 
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.6013371104773!2d3.3357324000000066!3d6.445203600000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b897dd0e72865%3A0xd070136c92034b3!2s36%20Babatunde%20St%2C%20Apapa%2C%20Lagos%20102103%2C%20Lagos!5e0!3m2!1sen!2sng!4v1770050020160!5m2!1sen!2sng" 
           className="mapContent" 
-          allowFullScreen={true} 
+          allowFullScreen= {true} 
           loading="lazy" 
-          referrerPolicy="no-referrer-when-downgrade">
-          </iframe>
+          referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </main>
